@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@500;700&family=Caveat:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="workshop-elements">
+        <div class="sticky-note" style="top: 120px; right: 50px; transform: rotate(5deg);">Ideas brillantes</div>
+        <div class="sticky-note" style="bottom: 180px; left: 40px; transform: rotate(-8deg);">Próximo reto</div>
+        <div class="pencil"></div>
+        <div class="coffee-stain"></div>
+        <div class="gear"></div>
+        <div class="circuit-line"></div>
+    </div>
+
     <header>
         <div class="container">
             <div class="logo">
                 <h1>NACES.AI</h1>
+                <div class="tagline">El taller de aprendizaje personalizado</div>
             </div>
             <nav>
                 <ul>
                     <li><a href="#about">Sobre Nosotros</a></li>
                     <li><a href="#how-it-works">Cómo Funciona</a></li>
+                    <li><a href="#badges">Insignias</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
@@ -30,17 +42,29 @@
             <div class="hero-content">
                 <h1>Educación Adaptativa para Mentes Neurodivergentes</h1>
                 <p>NACES.AI aprende cómo tú aprendes y adapta el contenido educativo a tus necesidades específicas.</p>
-                <a href="#demo" class="btn primary-btn">Ver Demostración</a>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn primary-btn">Ver Demostración</a>
+                    <a href="#badges" class="btn secondary-btn">Explorar Insignias</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="workshop-illustration">
+                    <!-- Ilustración del taller artesanal-futurista -->
+                </div>
             </div>
         </div>
     </section>
 
     <section id="about" class="about">
         <div class="container">
-            <h2>Sobre NACES.AI</h2>
+            <div class="section-header">
+                <h2>Sobre NACES.AI</h2>
+                <div class="underline"></div>
+            </div>
             <div class="about-content">
                 <div class="about-text">
                     <p>NACES.AI (Neurodivergent Amalia and Cecilia Entrepreneurship School powered by Artificial Intelligence) es una plataforma educativa revolucionaria diseñada específicamente para personas neurodivergentes.</p>
+                    <p>Somos artesanos de la inteligencia artificial, creando experiencias de aprendizaje a medida escritas para cada estudiante, combinando lo mejor de la tecnología con un enfoque profundamente humano.</p>
                     <p>Nuestra misión es proporcionar una experiencia de aprendizaje personalizada que se adapte a las fortalezas y necesidades únicas de cada estudiante, permitiéndoles prosperar en el mundo del emprendimiento, la tecnología y la inteligencia artificial.</p>
                 </div>
                 <div class="about-stats">
@@ -63,27 +87,139 @@
 
     <section id="how-it-works" class="how-it-works">
         <div class="container">
-            <h2>Cómo Funciona</h2>
+            <div class="section-header">
+                <h2>Cómo Funciona</h2>
+                <div class="underline"></div>
+            </div>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
                     <h3>Evaluación Inicial</h3>
                     <p>Identificamos tu perfil de aprendizaje y necesidades específicas.</p>
+                    <div class="step-icon workshop-icon"></div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <h3>Contenido Adaptado</h3>
                     <p>Personalizamos el formato y la presentación del contenido educativo.</p>
+                    <div class="step-icon workshop-icon"></div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <h3>Aprendizaje Continuo</h3>
                     <p>La IA aprende de tus interacciones y mejora constantemente la experiencia.</p>
+                    <div class="step-icon workshop-icon"></div>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
                     <h3>Progreso Personalizado</h3>
                     <p>Avanzas a tu propio ritmo con apoyo adaptado a tus necesidades.</p>
+                    <div class="step-icon workshop-icon"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="badges" class="badges">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sistema de Insignias</h2>
+                <div class="underline"></div>
+            </div>
+            <p class="badges-intro">Nuestro sistema de gamificación te ayuda a crear mejores hábitos de estudio y celebra tus logros con insignias que desbloquean nuevos contenidos.</p>
+            
+            <div class="badges-grid">
+                <div class="badge-item" data-badge="constancia">
+                    <div class="badge-sticky">
+                        <div class="badge-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Constancia</h3>
+                    </div>
+                </div>
+                <div class="badge-item" data-badge="concentracion">
+                    <div class="badge-sticky">
+                        <div class="badge-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Concentración</h3>
+                    </div>
+                </div>
+                <div class="badge-item" data-badge="customer">
+                    <div class="badge-sticky">
+                        <div class="badge-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Customer Discovery</h3>
+                    </div>
+                </div>
+                <div class="badge-item" data-badge="plan">
+                    <div class="badge-sticky">
+                        <div class="badge-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Plan de Negocio</h3>
+                    </div>
+                </div>
+                <div class="badge-item" data-badge="autocuidado">
+                    <div class="badge-sticky">
+                        <div class="badge-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Autocuidado</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="badge-detail" id="badge-detail">
+                <div class="badge-detail-content">
+                    <span class="close-badge">&times;</span>
+                    <div class="badge-detail-icon"></div>
+                    <h3 class="badge-detail-title"></h3>
+                    <p class="badge-detail-description"></p>
+                    <div class="badge-detail-requirements">
+                        <h4>Cómo conseguirla:</h4>
+                        <ul class="badge-requirements-list"></ul>
+                    </div>
+                    <div class="badge-detail-unlocks">
+                        <h4>Desbloquea:</h4>
+                        <p class="badge-unlocks-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wellness" class="wellness">
+        <div class="container">
+            <div class="section-header">
+                <h2>Bienestar y Autocuidado</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="wellness-content">
+                <div class="wellness-text">
+                    <p>En NACES.AI, creemos que el aprendizaje efectivo va de la mano con el bienestar personal. Nuestro sistema de gamificación incluye retos de autocuidado diseñados específicamente para personas neurodivergentes.</p>
+                    <p>Estos retos te animan a:</p>
+                    <ul class="wellness-list">
+                        <li><span class="check-icon">✓</span> Tomar descansos activos durante tus sesiones de estudio</li>
+                        <li><span class="check-icon">✓</span> Pasar tiempo al aire libre para reducir la fatiga mental</li>
+                        <li><span class="check-icon">✓</span> Practicar ejercicios de atención plena y reducción de estrés</li>
+                        <li><span class="check-icon">✓</span> Celebrar logros sociales importantes para tu desarrollo</li>
+                        <li><span class="check-icon">✓</span> Mantener un equilibrio saludable entre el tiempo de pantalla y otras actividades</li>
+                    </ul>
+                </div>
+                <div class="wellness-image">
+                    <div class="wellness-sticky-notes">
+                        <div class="wellness-note" style="transform: rotate(-3deg);">
+                            <p>¡20 min de sol!</p>
+                        </div>
+                        <div class="wellness-note" style="transform: rotate(5deg);">
+                            <p>5 flexiones</p>
+                        </div>
+                        <div class="wellness-note" style="transform: rotate(-5deg);">
+                            <p>Paseo al aire libre</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -91,7 +227,10 @@
 
     <section id="demo" class="demo">
         <div class="container">
-            <h2>Demostración</h2>
+            <div class="section-header">
+                <h2>Demostración</h2>
+                <div class="underline"></div>
+            </div>
             <p class="demo-intro">Observa cómo NACES.AI adapta el contenido educativo según diferentes tipos de neurodivergencia.</p>
             
             <div class="neurodivergence-selector">
@@ -143,7 +282,10 @@
 
     <section id="features" class="features">
         <div class="container">
-            <h2>Características Principales</h2>
+            <div class="section-header">
+                <h2>Características Principales</h2>
+                <div class="underline"></div>
+            </div>
             <div class="feature-grid">
                 <div class="feature-item">
                     <div class="feature-icon">🧠</div>
@@ -161,9 +303,9 @@
                     <p>Balance óptimo entre apoyo humano y asistencia de IA según tus necesidades.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">📊</div>
-                    <h3>Análisis de Progreso</h3>
-                    <p>Visualización clara de tu avance y recomendaciones para mejorar tu experiencia de aprendizaje.</p>
+                    <div class="feature-icon">🏆</div>
+                    <h3>Gamificación Consciente</h3>
+                    <p>Sistema de insignias y retos que motivan sin generar ansiedad, incluyendo actividades de autocuidado.</p>
                 </div>
             </div>
         </div>
@@ -171,7 +313,10 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Mantente Informado</h2>
+            <div class="section-header">
+                <h2>Mantente Informado</h2>
+                <div class="underline"></div>
+            </div>
             <p>Suscríbete para recibir actualizaciones sobre el desarrollo de NACES.AI y ser de los primeros en probar nuestra plataforma.</p>
             <form name="contact" method="POST" data-netlify="true">
                 <div class="form-group">
@@ -203,13 +348,14 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <h2>NACES.AI</h2>
-                    <p>Educación adaptativa para mentes neurodivergentes</p>
+                    <p>El taller de aprendizaje personalizado</p>
                 </div>
                 <div class="footer-links">
                     <h3>Enlaces</h3>
                     <ul>
                         <li><a href="#about">Sobre Nosotros</a></li>
                         <li><a href="#how-it-works">Cómo Funciona</a></li>
+                        <li><a href="#badges">Insignias</a></li>
                         <li><a href="#demo">Demostración</a></li>
                         <li><a href="#contact">Contacto</a></li>
                     </ul>
@@ -229,7 +375,6 @@
         </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
