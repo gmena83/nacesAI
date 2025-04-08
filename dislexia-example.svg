@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e" />
+      <stop offset="100%" stop-color="#16213e" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="800" height="600" fill="url(#bg-gradient)" />
+  
+  <!-- Elementos de interfaz para Dislexia -->
+  <!-- Header -->
+  <rect x="50" y="50" width="700" height="60" rx="8" fill="#ffab40" opacity="0.9" />
+  <text x="80" y="90" font-family="'OpenDyslexic', sans-serif" font-size="24" fill="#ffffff">NACES.AI - Módulo: Introducción al Emprendimiento</text>
+  
+  <!-- Barra de progreso -->
+  <rect x="50" y="130" width="700" height="20" rx="10" fill="#16213e" stroke="#ffab40" stroke-width="2" />
+  <rect x="50" y="130" width="350" height="20" rx="10" fill="#ffab40" />
+  <text x="400" y="165" font-family="'OpenDyslexic', monospace" font-size="14" fill="#ffffff" text-anchor="middle">Progreso: 50%</text>
+  
+  <!-- Contenedor principal con mayor espaciado -->
+  <rect x="50" y="180" width="700" height="350" rx="8" fill="#16213e" stroke="#ffab40" stroke-width="2" />
+  
+  <!-- Contenido con mayor espaciado entre líneas y párrafos -->
+  <text x="80" y="220" font-family="'OpenDyslexic', sans-serif" font-size="22" fill="#ffffff">Conceptos Básicos del Emprendimiento</text>
+  
+  <text x="80" y="270" font-family="'OpenDyslexic', sans-serif" font-size="18" fill="#ffffff" letter-spacing="0.5">¿Qué es un MVP?</text>
+  
+  <text x="80" y="310" font-family="'OpenDyslexic', sans-serif" font-size="16" fill="#ffffff" letter-spacing="0.5" style="line-height: 1.8">Un MVP (Producto Mínimo Viable) es la versión más</text>
+  <text x="80" y="345" font-family="'OpenDyslexic', sans-serif" font-size="16" fill="#ffffff" letter-spacing="0.5" style="line-height: 1.8">simple de tu producto que te permite validar tu idea</text>
+  <text x="80" y="380" font-family="'OpenDyslexic', sans-serif" font-size="16" fill="#ffffff" letter-spacing="0.5" style="line-height: 1.8">con usuarios reales y minimizar recursos iniciales.</text>
+  
+  <!-- Opciones de audio para contenido textual -->
+  <rect x="80" y="420" width="50" height="50" rx="25" fill="#ffab40" />
+  <polygon points="95,435 95,455 115,445" fill="#ffffff" />
+  <text x="150" y="450" font-family="'OpenDyslexic', sans-serif" font-size="16" fill="#ffffff">Escuchar texto</text>
+  
+  <!-- Organizador gráfico / mapa conceptual -->
+  <rect x="400" y="220" width="320" height="200" rx="8" fill="#1a1a2e" stroke="#ffab40" stroke-width="1" />
+  
+  <ellipse cx="560" cy="270" rx="100" ry="40" fill="#1a1a2e" stroke="#ffab40" stroke-width="2" />
+  <text x="560" y="275" font-family="'OpenDyslexic', sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">MVP</text>
+  
+  <line x1="500" y1="300" x2="470" y2="330" stroke="#ffab40" stroke-width="2" />
+  <ellipse cx="430" cy="350" rx="70" ry="30" fill="#1a1a2e" stroke="#ffab40" stroke-width="2" />
+  <text x="430" y="355" font-family="'OpenDyslexic', sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Validación</text>
+  
+  <line x1="560" y1="300" x2="560" y2="330" stroke="#ffab40" stroke-width="2" />
+  <ellipse cx="560" cy="350" rx="70" ry="30" fill="#1a1a2e" stroke="#ffab40" stroke-width="2" />
+  <text x="560" y="355" font-family="'OpenDyslexic', sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Simplicidad</text>
+  
+  <line x1="620" y1="300" x2="650" y2="330" stroke="#ffab40" stroke-width="2" />
+  <ellipse cx="690" cy="350" rx="70" ry="30" fill="#1a1a2e" stroke="#ffab40" stroke-width="2" />
+  <text x="690" y="355" font-family="'OpenDyslexic', sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Economía</text>
+  
+  <!-- Evaluación alternativa a la lectura/escritura -->
+  <rect x="50" y="550" width="700" height="30" rx="8" fill="#16213e" stroke="#ffab40" stroke-width="2" />
+  <text x="80" y="570" font-family="'OpenDyslexic', sans-serif" font-size="16" fill="#ffffff">Evaluación: Grabación de audio o presentación oral en lugar de texto escrito</text>
+  
+  <!-- Navegación -->
+  <rect x="200" y="480" width="150" height="50" rx="8" fill="#1a1a2e" stroke="#ffab40" stroke-width="2" />
+  <text x="275" y="510" font-family="'OpenDyslexic', sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">Anterior</text>
+  
+  <rect x="450" y="480" width="150" height="50" rx="8" fill="#ffab40" />
+  <text x="525" y="510" font-family="'OpenDyslexic', sans-serif" font-size="16" fill="#1a1a2e" text-anchor="middle">Siguiente</text>
+</svg>

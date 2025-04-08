@@ -1,11 +1,10 @@
-// NACES.AI - JavaScript principal con funcionalidades de gamificación
-// Implementa interactividad para el prototipo con elementos de gamificación
+// NACES.AI - JavaScript principal con funcionalidades modernas
+// Implementa interactividad para el prototipo con estilo computacional
 
 document.addEventListener('DOMContentLoaded', function() {
     // Variables
     const neurodivergenceButtons = document.querySelectorAll('.neurodivergence-btn');
-    const adaptationContents = document.querySelectorAll('.adaptation-content');
-    const demoFrame = document.getElementById('demo-frame');
+    const exampleContainers = document.querySelectorAll('.example-container');
     const badgeItems = document.querySelectorAll('.badge-item');
     const badgeDetail = document.getElementById('badge-detail');
     const badgeDetailTitle = document.querySelector('.badge-detail-title');
@@ -14,14 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const badgeUnlocksText = document.querySelector('.badge-unlocks-text');
     const badgeDetailIcon = document.querySelector('.badge-detail-icon');
     const closeBadge = document.querySelector('.close-badge');
-    
-    // Videos de demostración para cada tipo de neurodivergencia
-    // Estos serían reemplazados por los videos reales cuando estén disponibles
-    const demoVideos = {
-        'tdah': 'https://www.youtube.com/embed/placeholder-tdah',
-        'tea': 'https://www.youtube.com/embed/placeholder-tea',
-        'dislexia': 'https://www.youtube.com/embed/placeholder-dislexia'
-    };
     
     // Datos de las insignias
     const badgesData = {
@@ -93,19 +84,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // Actualizar contenido de adaptación
-        adaptationContents.forEach(content => {
-            if (content.id === `${type}-content`) {
-                content.classList.add('active');
+        // Actualizar ejemplos
+        exampleContainers.forEach(container => {
+            if (container.id === `${type}-example`) {
+                container.classList.add('active');
             } else {
-                content.classList.remove('active');
+                container.classList.remove('active');
             }
         });
-        
-        // Actualizar video de demostración
-        if (demoVideos[type]) {
-            demoFrame.src = demoVideos[type];
-        }
         
         // Aplicar clase de modo específico al body para estilos adaptados
         document.body.classList.remove('tdah-mode', 'tea-mode', 'dislexia-mode');
@@ -215,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (elementPosition < screenPosition) {
                 element.style.opacity = '1';
                 element.style.transform = element.classList.contains('badge-item') 
-                    ? 'translateY(0) rotate(' + (Math.random() * 10 - 5) + 'deg)'
+                    ? 'translateY(0)'
                     : 'translateY(0)';
             }
         });
@@ -230,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     document.querySelectorAll('.badge-item').forEach(element => {
         element.style.opacity = '0';
-        element.style.transform = 'translateY(20px) rotate(' + (Math.random() * 10 - 5) + 'deg)';
+        element.style.transform = 'translateY(20px)';
         element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     });
     
@@ -241,38 +227,70 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicializar con TDAH seleccionado por defecto
     changeNeurodivergenceType('tdah');
     
-    // Añadir elementos de taller dinámicos
-    function createWorkshopElements() {
-        // Crear notas adhesivas aleatorias
+    // Añadir elementos de código dinámicos
+    function createCodeElements() {
+        // Crear líneas de código aleatorias
+        const codeLines = [
+            'function adaptContent(neurodivergenceType) { }',
+            'const learningPath = new AIAdaptiveSystem();',
+            'if (attention < threshold) { addInteractivity(); }',
+            'class NeurodivergentLearner extends Student { }',
+            'const success = await personalizedLearning();'
+        ];
+        
         for (let i = 0; i < 3; i++) {
-            const note = document.createElement('div');
-            note.className = 'sticky-note';
+            const line = document.createElement('div');
+            line.className = 'code-line';
             
             // Posición aleatoria (asegurándose de que no interfiera con el contenido principal)
             const isLeft = Math.random() > 0.5;
-            note.style.top = Math.floor(Math.random() * 70 + 15) + 'vh';
-            note.style[isLeft ? 'left' : 'right'] = Math.floor(Math.random() * 10 + 2) + 'vw';
-            note.style.transform = `rotate(${Math.floor(Math.random() * 20 - 10)}deg)`;
-            
-            // Color aleatorio
-            const colors = ['var(--sticky-yellow)', 'var(--sticky-blue)', 'var(--sticky-green)', 'var(--sticky-pink)', 'var(--sticky-orange)'];
-            note.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            line.style.top = Math.floor(Math.random() * 70 + 15) + 'vh';
+            line.style[isLeft ? 'left' : 'right'] = Math.floor(Math.random() * 10 + 2) + 'vw';
             
             // Contenido aleatorio
-            const contents = [
-                'Idea brillante',
-                'Próximo reto',
-                'Recordatorio',
-                '¡No olvidar!',
-                'Importante',
-                'Revisar esto'
-            ];
-            note.textContent = contents[Math.floor(Math.random() * contents.length)];
+            line.textContent = codeLines[Math.floor(Math.random() * codeLines.length)];
             
-            document.querySelector('.workshop-elements').appendChild(note);
+            document.querySelector('.code-elements').appendChild(line);
         }
     }
     
-    // Llamar a la función para crear elementos de taller
-    createWorkshopElements();
+    // Efecto de partículas para el hero
+    function createParticles() {
+        const particlesContainer = document.querySelector('.hero-particles');
+        if (!particlesContainer) return;
+        
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.width = Math.random() * 5 + 1 + 'px';
+            particle.style.height = particle.style.width;
+            particle.style.background = 'var(--primary)';
+            particle.style.borderRadius = '50%';
+            particle.style.position = 'absolute';
+            particle.style.top = Math.random() * 100 + '%';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.opacity = Math.random() * 0.5;
+            particle.style.animation = `float ${Math.random() * 10 + 10}s linear infinite`;
+            particle.style.animationDelay = Math.random() * 5 + 's';
+            
+            particlesContainer.appendChild(particle);
+        }
+    }
+    
+    // Llamar a las funciones para crear elementos dinámicos
+    createCodeElements();
+    createParticles();
+    
+    // Añadir estilos para animación de partículas
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes float {
+            0% { transform: translateY(0) translateX(0); }
+            25% { transform: translateY(-20px) translateX(10px); }
+            50% { transform: translateY(0) translateX(20px); }
+            75% { transform: translateY(20px) translateX(10px); }
+            100% { transform: translateY(0) translateX(0); }
+        }
+    `;
+    document.head.appendChild(style);
 });
